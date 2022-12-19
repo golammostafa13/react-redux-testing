@@ -4,6 +4,6 @@ import { renderWithProviders } from "./app/utils";
 
 
 test("should get store", async() => {
-  const {getByTestId}=renderWithProviders(<App />);
-  console.log(getByTestId)
+  renderWithProviders(<App />);
+  expect(screen.getByText(/Submit/i)).toBeInTheDocument()
 });
