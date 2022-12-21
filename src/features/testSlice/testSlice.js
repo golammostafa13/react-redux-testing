@@ -18,7 +18,6 @@ export const testSlice = createSlice({
             state.formData = action.payload;
         },
         setAuthor: (state, action) => {
-            console.log(action.payload)
             state.author = action.payload;
         }
     },
